@@ -6,8 +6,14 @@ package org.example;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
+    public App() throws Exception {
+    }
+
+    public static void main(String[] args ) throws Exception {
+
         System.out.println( "Hello World!" );
+        Calculator calc = new Calculator();
+        int result = calc.add(10,5);
+        System.out.println("result = " + result);
     }
 }
